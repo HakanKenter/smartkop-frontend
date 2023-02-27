@@ -227,7 +227,7 @@ const Landing = () => {
                                 <article className="card p-4" style={{ backgroundColor: "#232f3e" }}>
                                     <div className="row align-items-center">
                                         <div className="col">
-                                            <h4 className="mb-0 text-white">Meilleur produit et prix dans la boutique !</h4>
+                                            <h4 className="mb-0 text-white">Meilleurs produits et prix dans la boutique !</h4>
                                             <p className="mb-0 text-white-50">Des produits et des textes tendance.</p>
                                         </div>
                                         <div className="col-auto"> <a className="btn btn-warning" style={{ background: "#fa9c23" }} href="products-search">Découvrir</a> </div>
