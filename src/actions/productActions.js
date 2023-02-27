@@ -41,11 +41,11 @@ export const getProducts = (keyword = '', currentPage = 1, price, category, rati
     try {
         dispatch({ type: ALL_PRODUCTS_REQUEST })
 
-        let link = `${APP_SERVER_URL}/api/v1/products?keyword=${keyword}&page=${currentPage}&price[lte]=${price[1]}&price[gte]=${price[0]}&ratings[gte]=${ratings}`;
+        let link = `${process.env.APP_SERVER_URL}/api/v1/products?keyword=${keyword}&page=${currentPage}&price[lte]=${price[1]}&price[gte]=${price[0]}&ratings[gte]=${ratings}`;
 
         // This because category is only filter that isn't specified by default
         if (category) {
-            link = `${APP_SERVER_URL}/api/v1/products?keyword=${keyword}&page=${currentPage}&price[lte]=${price[1]}&price[gte]=${price[0]}&category=${category}&ratings[gte]=${ratings}`;
+            link = `${process.env.APP_SERVER_URL}/api/v1/products?keyword=${keyword}&page=${currentPage}&price[lte]=${price[1]}&price[gte]=${price[0]}&category=${category}&ratings[gte]=${ratings}`;
         }
 
         // get all products data
@@ -66,7 +66,7 @@ export const getAllProducts = () => async (dispatch) => {
     try {
         dispatch({ type: ALL_PRODUCTS_NOFILTER_REQUEST })
 
-        let link = `${APP_SERVER_URL}/api/v1/allproducts`;
+        let link = `${process.env.APP_SERVER_URL}/api/v1/allproducts`;
 
         // get all products data
         const { data } = await axios.get(link);
