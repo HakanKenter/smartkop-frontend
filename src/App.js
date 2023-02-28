@@ -59,6 +59,7 @@ import SearchPage from './components/layout/SearchPage'
 import PricacyPolicy from './rgpd/PricacyPolicy';
 import LegalNotice from './rgpd/LegalNotice';
 import CGV from './rgpd/CGV';
+import { URL } from './urls' 
 
 
 function App() {
@@ -74,7 +75,7 @@ function App() {
       // TODO: It is better to load stripe api key, than to set it manually
 
       // async function getStripApiKey() {
-      //   const { data } = await axios.get('/api/v1/stripeapi');
+      //   const { data } = await axios.get('${URL}/api/v1/stripeapi');
 
       //   setStripeApiKey(data.stripeApiKey)
       // }
