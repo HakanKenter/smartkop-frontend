@@ -75,7 +75,7 @@ function App() {
       // TODO: It is better to load stripe api key, than to set it manually
 
       // async function getStripApiKey() {
-      //   const { data } = await axios.get('${URL}/api/v1/stripeapi');
+      //   const { data } = await axios.get('/api/v1/stripeapi');
 
       //   setStripeApiKey(data.stripeApiKey)
       // }
