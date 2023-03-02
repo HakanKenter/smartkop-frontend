@@ -16,6 +16,8 @@ import { removeAllItemFromCart } from '../../actions/cartActions'
 import { updateProduct } from '../../actions/productActions'
 
 import { URL } from '../../urls'
+import { API_URL } from '../../urls'
+axios.defaults.withCredentials = true;
 
 const options = {
     style: {    
@@ -82,7 +84,7 @@ const Payment = () => {
                 }
             }
 
-            res = await axios.post(`${URL}/api/v1/payment/process`, paymentData, config)
+            res = await axios.post(`${API_URL}/api/v1/payment/process`, paymentData, config)
 
             const clientSecret = res.data.client_secret;
 
