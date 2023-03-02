@@ -23,7 +23,7 @@ const Product = ({ product, col }) => {
 
     return (
         <div 
-            className={`col-lg-${col} col-md-6 col-sm-6`}
+            className={`col-lg-${col} col-md-6 col-sm-6 col-12`}
         >
             
             <figure 

@@ -16,7 +16,7 @@ const Register = () => {
         password: '',
     })
 
-    const {name, email, password} = user;
+    const { name, email, password } = user;
 
     const [avatar, setAvatar] = useState('');
     const [avatarPreview, setAvatarPreview] = useState('/images/default.jpg');
@@ -53,12 +53,12 @@ const Register = () => {
     };
 
     const onChange = e => {
-        if(e.target.name === 'avatar') {
+        if (e.target.name === 'avatar') {
 
             const reader = new FileReader();
 
             reader.onload = () => {
-                if(reader.readyState === 2) {
+                if (reader.readyState === 2) {
                     setAvatarPreview(reader.result);
                     setAvatar(reader.result);
                 }
@@ -69,8 +69,8 @@ const Register = () => {
         } else {
 
             setUser({
-               ...user,
-               [e.target.name]: e.target.value,
+                ...user,
+                [e.target.name]: e.target.value,
             });
 
         }
@@ -86,79 +86,81 @@ const Register = () => {
                     <form className="shadow-lg" onSubmit={submitHandler} encType='multipart/form-data'>
                         <h1 className="mb-3 f-24 text-center">Inscription</h1>
 
-                    <div className="form-group">
-                        <label htmlFor="email_field">Nom</label>
-                        <input 
-                        type="name" 
-                        id="name_field" 
-                        className="form-control" 
-                        name="name"
-                        value={name}
-                        onChange={onChange}
-                        />
-                    </div>
+                        <div className="form-group">
+                            <label htmlFor="email_field">Nom</label>
+                            <input
+                                type="name"
+                                id="name_field"
+                                className="form-control"
+                                name="name"
+                                value={name}
+                                onChange={onChange}
+                            />
+                        </div>
 
                         <div className="form-group">
-                        <label htmlFor="email_field">Email</label>
-                        <input
-                            type="email"
-                            id="email_field"
-                            className="form-control"
-                            name="email"
-                            value={email}
-                            onChange={onChange}
-                        />
+                            <label htmlFor="email_field">Email</label>
+                            <input
+                                type="email"
+                                id="email_field"
+                                className="form-control"
+                                name="email"
+                                value={email}
+                                onChange={onChange}
+                            />
                         </div>
-            
+
                         <div className="form-group">
-                        <label htmlFor="password_field">Mot de passe</label>
-                        <input
-                            type="password"
-                            id="password_field"
-                            className="form-control"
-                            name="password"
-                            value={password}
-                            onChange={onChange}
-                        />
+                            <label htmlFor="password_field">Mot de passe</label>
+                            <input
+                                type="password"
+                                id="password_field"
+                                className="form-control"
+                                name="password"
+                                value={password}
+                                onChange={onChange}
+                            />
                         </div>
 
                         <div className='form-group'>
-                        <label htmlFor='avatar_upload'>Image</label>
-                        <div className='d-flex align-items-center'>
-                            <div>
-                                <figure className='avatar mr-3 item-rtl'>
-                                    <img
-                                        src={avatarPreview}
-                                        className='rounded-circle'
-                                        alt='Avatar Preview'
-                                    />
-                                </figure>
-                            </div>
+                            <label htmlFor='avatar_upload'>Image</label>
+                            <div className='d-flex align-items-center'>
+                                <div>
+                                    <figure className='avatar mr-3 item-rtl'>
+                                        <img
+                                            src={avatarPreview}
+                                            className='rounded-circle'
+                                            alt='Avatar Preview'
+                                        />
+                                    </figure>
+                                </div>
 
-                            <div className='custom-file'>
-                                <input
-                                    type='file'
-                                    name='avatar'
-                                    className='custom-file-input'
-                                    id='customFile'
-                                    accept='image/*'
-                                    onChange={onChange}
-                                    style={{display: 'none'}}
-                                />
-                                <label className='btn' htmlFor='customFile'>
-                                    Choisir une image
-                                </label>
+                                <div className='custom-file'>
+                                    <input
+                                        type='file'
+                                        name='avatar'
+                                        className='custom-file-input'
+                                        id='customFile'
+                                        accept='image/*'
+                                        onChange={onChange}
+                                        style={{ display: 'none' }}
+                                    />
+                                    <label className='btn choose-image-register' htmlFor='customFile'>
+                                        Choisir une image
+                                    </label>
+                                </div>
+                                
                             </div>
                         </div>
-                    </div>
-            
+                        <small className="mb-5">Format accepté: JPG / JPEG</small>
+
                         <button
-                        id="register_button"
-                        type="submit"
-                        className="btn btn-block py-3"
-                        disabled={loading ? true : false}
+                            id="register_button"
+                            type="submit"
+                            className="btn btn-block py-3 mt-4"
+                            disabled={loading ? true : false}
                         >
-                        M'inscrire
+                            M'inscrire
                         </button>
                     </form>
                 </div>
