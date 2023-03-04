@@ -23,22 +23,40 @@ const SearchPage = () => {
     const [rating, setRating] = useState(0)
     const numberOfResultsPerPage = 6;  
 
+    // const categories = [
+    //     "Générale",
+    //     "Electronique",
+    //     "Appareils photo",  
+    //     "Camera",
+    //     "Ordinateur portable",
+    //     "Accessoires",
+    //     "Casques",
+    //     "Ordinateur",
+    //     "Carte graphique",
+    //     "Carte mémoire",
+    //     "USB",
+    //     "Chargeur",
+    //     "LED",
+    //     "Tablette",
+    //     "Smartphone"
+    // ]
+
     const categories = [
-        "Générale",
-        "Electronique",
-        "Appareils photo",
-        "Camera",
-        "Ordinateur portable",
-        "Accessoires",
-        "Casques",
-        "Ordinateur",
-        "Carte graphique",
-        "Carte mémoire",
-        "USB",
-        "Chargeur",
-        "LED",
-        "Tablette",
-        "Smartphone"
+        ["Générale", "Générale"],
+        ["Electronique", "Électronique"],
+        ["Appareils photo", "Appareil photo"],
+        ["Camera", "Caméra"],
+        ["Ordinateur portable", "Ordinateur portable"],
+        ["Accessoires", "Accessoire"],
+        ["Casques", "Casque"],
+        ["Ordinateur", "Ordinateur"],
+        ["Carte graphique", "Carte graphique"],
+        ["Carte memoire", "Carte mémoire"],
+        ["USB", "USB"],
+        ["Chargeur", "Chargeur"],
+        ["LED", "LED"],
+        ["Tablette", "Tablette"],
+        ["Smartphone", "Smartphone"]
     ]
 
     const alert = useAlert();
@@ -133,7 +151,7 @@ const SearchPage = () => {
                                 <div className="row">
                                     <aside className="col-lg-3">
 
-                                        <button class="btn btn-outline-secondary mb-3 w-100  d-lg-none" data-bs-toggle="collapse" data-bs-target="#aside_filter">Voir les filtres</button>
+                                        <button className="btn btn-outline-secondary mb-3 w-100  d-lg-none" data-bs-toggle="collapse" data-bs-target="#aside_filter">Voir les filtres</button>
 
                                         <div id="aside_filter" className="collapse card d-lg-block mb-5">
 
@@ -152,10 +170,10 @@ const SearchPage = () => {
                                                                         cursor: 'pointer',
                                                                         listStyleType: 'none'
                                                                     }}
-                                                                    key={category}
-                                                                    onClick={() => handleCategory(category)}
+                                                                    key={category[0]}
+                                                                    onClick={() => handleCategory(category[0])}
                                                                 >
-                                                                    {category}
+                                                                    {category[1]}
                                                                 </li>
                                                             ))}
                                                         </ul>

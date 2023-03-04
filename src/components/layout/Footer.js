@@ -37,7 +37,7 @@ const Footer2 = () => {
                                         <Link to={`/products-search?search=macbook`}>Ordinateur</Link>
                                     </li>
                                     <li>
-                                        <Link to={`/products-search?search=cable`}>Câble</Link>
+                                        <Link to={`/products-search?search=Casques`}>Casque</Link>
                                     </li>
                                 </ul>
                             </aside>
