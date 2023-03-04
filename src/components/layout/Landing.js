@@ -230,7 +230,7 @@ const Landing = () => {
                                             <h4 className="mb-0 text-white">Meilleurs produits et prix dans la boutique !</h4>
                                             <p className="mb-0 text-white-50">Des produits et des textes tendance.</p>
                                         </div>
-                                        <div className="col-auto"> <a className="btn btn-warning" style={{ background: "#fa9c23" }} href="products-search">Découvrir</a> </div>
+                                        <div className="col-auto"> <a className="btn btn-warning" style={{ background: "#fa9c23" }} href="/products-search">Découvrir</a> </div>
                                     </div>
                                 </article>
                             </div>
