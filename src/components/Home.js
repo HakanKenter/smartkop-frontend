@@ -22,22 +22,40 @@ const Home = () => {
     const [category, setCategory] = useState('')
     const [rating, setRating] = useState(0)
 
+    // const categories = [
+    //     "Générale",
+    //     "Electronique",
+    //     "Appareils photo",
+    //     "Camera",
+    //     "Ordinateur portable",
+    //     "Accessoires",
+    //     "Casques",
+    //     "Ordinateur",
+    //     "Carte graphique",
+    //     "Carte mémoire",
+    //     "USB",
+    //     "Chargeur",
+    //     "LED",
+    //     "Tablette",
+    //     "Smartphone"
+    // ]
+
     const categories = [
-        "Générale",
-        "Electronique",
-        "Appareils photo",
-        "Camera",
-        "Ordinateur portable",
-        "Accessoires",
-        "Casques",
-        "Ordinateur",
-        "Carte graphique",
-        "Carte mémoire",
-        "USB",
-        "Chargeur",
-        "LED",
-        "Tablette",
-        "Smartphone"
+        ["Générale", "Générale"],
+        ["Electronique", "Électronique"],
+        ["Appareils photo", "Appareil photo"],
+        ["Camera", "Caméra"],
+        ["Ordinateur portable", "Ordinateur portable"],
+        ["Accessoires", "Accessoire"],
+        ["Casques", "Casque"],
+        ["Ordinateur", "Ordinateur"],
+        ["Carte graphique", "Carte graphique"],
+        ["Carte memoire", "Carte mémoire"],
+        ["USB", "USB"],
+        ["Chargeur", "Chargeur"],
+        ["LED", "LED"],
+        ["Tablette", "Tablette"],
+        ["Smartphone", "Smartphone"]
     ]
 
     const alert = useAlert();

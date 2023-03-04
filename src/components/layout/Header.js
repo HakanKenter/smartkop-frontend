@@ -139,7 +139,7 @@ const Header2 = () => {
                                     <Link className="nav-link" to={`/products-search?search=macbook`}>Ordinateur</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to={`/products-search?search=cable`}>Câble</Link>
+                                    <Link className="nav-link" to={`/products-search?search=Casques`}>Casque</Link>
                                 </li>
                             </ul>
                         </div>

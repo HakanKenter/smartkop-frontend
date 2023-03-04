@@ -24,7 +24,7 @@ const UpdateProduct = () => {
     const [imagesPreview, setImagesPreview] = useState([]);
 
     const categories = [
-        "electronique",
+        "Electronique",
         "Appareils photo",
         "Camera",
         "Ordinateur portable",
