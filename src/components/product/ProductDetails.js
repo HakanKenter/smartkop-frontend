@@ -162,7 +162,7 @@ const ProductDetails = () => {
                                 <div className="container">
 
                                     <ol className="breadcrumb ondark mb-0">
-                                        <li className="breadcrumb-item" style={{ background: "white", border: "none", color: "#9da1a7", cursor: "pointer" }} onClick={() => navigate(-1)}>Précédent</li>
+                                        <li className="breadcrumb-item" style={{ background: "white", border: "none", color: "#9da1a7", cursor: "pointer" }} onClick={() => {window.location.href="/"}}>Précédent</li>
                                         <li className="breadcrumb-item active" aria-current="page">{product.name}</li>
                                     </ol>
 
