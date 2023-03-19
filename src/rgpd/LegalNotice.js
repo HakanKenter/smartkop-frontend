@@ -50,7 +50,7 @@ const LegalNotice = () => {
                 <h2 className="title-rights">4. Hébergeur</h2>
 
                 <p className="text-rights">
-                    Hébergeur du site : Heroku - The Landmark at One Market, Suite 300, San Francisco, CA 94105, États Unis.
+                    Hébergeur du site : OVHcloud - 2 rue Kellermann - 59100 Roubaix - France
                 </p>
 
             </div>
