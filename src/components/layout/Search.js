@@ -28,9 +28,10 @@ const Search = ({ history }) => {
                     className="form-control" 
                     style={{ width: "55%", height: "40px" }} 
                     placeholder="Rechercher..."
+                    data-testid="search-input"
                     onChange={(e) => setKeyword(e.target.value)}
                 />
-                <button className="btn btn-primary" >
+                <button className="btn btn-primary" data-testid="search-btn">
                     <i className="fa fa-search"></i>
                 </button>
             </div>

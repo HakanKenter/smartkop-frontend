@@ -1,6 +1,9 @@
+import axios from 'axios';
 import React, { Fragment } from 'react'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
+
+import { FRONT_URL } from '../../urls'
 
 const Footer2 = () => {
 
@@ -22,13 +25,13 @@ const Footer2 = () => {
                                 <h6 className="title">SMARTKOP</h6>
                                 <ul className="list-menu mb-4">
                                     <li>
-                                        <a href="#newProduct">Nouveau</a>
+                                        <a href={`${FRONT_URL}#newProduct`}>Nouveau</a>
                                     </li>
                                     <li>
-                                        <a href="#category-nav-block-recommended"> Recommandé </a>
+                                        <a href={`${FRONT_URL}#category-nav-block-recommended`}> Recommandé </a>
                                     </li>
                                     <li>
-                                        <a href="#best-seller">Meilleures notes</a>
+                                        <a href={`${FRONT_URL}#best-seller`}>Meilleures notes</a>
                                     </li>
                                     <li>
                                         <Link to={`/products-search?search=carte`}>Carte graphique</Link>
@@ -44,9 +47,9 @@ const Footer2 = () => {
                             <aside className="col-12 col-sm-4 col-lg-3">
                                 <h6 className="title">INFORMATIONS LEGALES</h6>
                                 <ul className="list-menu mb-4">
-                                    <li> <a href="legal-notice">Mentions légales</a></li>
-                                    <li> <a href="cgv">Conditions Générales de Vente</a></li>
-                                    <li> <a href="privacy-policy">Politique de confidentialité</a></li>
+                                    <li> <a href="/legal-notice">Mentions légales</a></li>
+                                    <li> <a href="/cgv">Conditions Générales de Vente</a></li>
+                                    <li> <a href="/privacy-policy">Politique de confidentialité</a></li>
                                 </ul>
                             </aside>
                             <aside className="col-12 col-sm-4 col-lg-3">

@@ -100,7 +100,7 @@ const Cart = () => {
                             <div id="order_summary">
                                 <h4 className="f-20">Résumé de la commande</h4>
                                 <hr />
-                                <p>Sous-total:  <span className="order-summary-values">{cartItems.reduce((acc, item) => (acc + Number(item.quantity)), 0)} (Unités)</span></p>
+                                <p>Sous-total:  <span className="order-summary-values">{cartItems.reduce((acc, item) => (acc + Number(item.quantity)), 0)} Unité(s)</span></p>
                                 <p>Total: <span className="order-summary-values">{cartItems.reduce((acc, item) => acc + Number(item.quantity) * item.price, 0).toFixed(2)}€</span></p>
                 
                                 <hr />
