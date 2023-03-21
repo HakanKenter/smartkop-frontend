@@ -100,7 +100,7 @@ const ProductReviews = () => {
 
     return (
         <Fragment>
-            <MetaData title={'Commantaire produit'} />
+            <MetaData title={'Commentaire produit'} />
             <div className="d-flex">
                 <div className="sidebar-navbar">
                     <Sidebar />
